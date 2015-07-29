@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- bootstrap stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!-- our style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+
+	<!-- bootstrap javascript -->
+	<script src="js/bootstrap.min.js"></script>	
+
+	<title>Simple | a simple user friendly theme</title>
+</head>
+
+<body>
+	<header class="header">
+		<!-- navbar -->
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+	      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">Brand</a>
+	        </div>
+
+	        <!-- Collect the nav links, forms, and other content for toggling -->
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+	          <ul class="nav navbar-nav">
+	            <li><a href="#">Home</a></li>
+				<ul class="nav navbar-nav">
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="blog-2col-right.html">blog 2col right</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>            
+	            <li><a href="#">Pages</a></li>
+	          </ul>
+	        </div><!-- /.navbar-collapse -->
+	      </div>
+	    </nav>
+	</header>
+
+    <div class="container">   
+        <div class="row">
+            <div class="col-md-8">
+        		<h1 class="text-center"><i class="fa fa-magic"></i> Say to us</h1>
+			    <div class="row margin-20 padding-15">
+					<form class="form-horizontal" role="form">
+
+					  <div class="form-group">
+					    <label for="inputName" class="col-sm-2 control-label">Your Name <i class="fa fa-asterisk red"></i></label>
+					    <div class="col-sm-10">
+					      <input type="text" class="form-control" id="inputName" placeholder="what is your name">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label for="inputEmail" class="col-sm-2 control-label">Your E-mail <i class="fa fa-asterisk red"></i></label>
+					    <div class="col-sm-10">
+					      <input type="email" class="form-control" id="inputEmail" placeholder="enter your e-mail">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label for="inputURL" class="col-sm-2 control-label">Your URL</label>
+					    <div class="col-sm-10">
+					      <input type="url" class="form-control" id="inputURL" placeholder="your site address">
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label for="inputComment" class="col-sm-2 control-label">Your Idea <i class="fa fa-asterisk red"></i></label>
+					    <div class="col-sm-10">
+					  	  <textarea id="inputComment" placeholder="What do think?" class="form-control" rows="5"></textarea>  					    
+					    </div>
+					  </div>					  
+
+					  <div class="form-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <small class="pull-right"><i class="fa fa-asterisk"></i> Fields are required.</small>
+					      <button type="submit" class="btn btn-blue">Send</button>
+					    </div>
+					  </div>
+					</form>
+			    </div>        		
+            </div>
+
+            <div class="col-md-4">
+        		<h2 class="text-center"><i class="fa fa-map-marker"></i> We are here</h2>
+        		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+				<iframe width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=11&center=53.4084%2C-2.9916&key=AIzaSyAype8mWfqb7E7KQ-DJ7A3sw48CVmf7fbE"></iframe>      		
+            </div>
+        </div>
+    </div><!-- end container -->
+
+    <!-- footer -->
+    <footer class="footer">
+    	<div class="row footer-content center-block">
+	    	<div class="col-md-4">
+	    		<div class="footer-widget">
+	    			<h2 class="title-blue">Search</h2>
+				    <div class="input-group">
+				      <input type="text" class="form-control" placeholder="Search our site...">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+				      </span>
+				    </div>    		
+				</div>
+
+			    <div class="footer-widget">
+			    	<h2 class="title-blue">About Us</h2>
+			    	<p>Simple is Responsive, Bootstrap Based Theme Just For YOU :)</p>
+			    </div>
+	    	</div>
+
+	    	<div class="col-md-4">
+	    		<div class="footer-widget recent-posts-red">
+	    			<h2 class="title-red">Recent Posts</h2>
+	    			<div class="row">
+	    				<a href="#">
+		    				<div class="col-md-3">
+		    					<img src="images/a_mad_tea_party_thumbnail.jpg" class="img-rounded img-responsive" alt="Responsive image">
+		    				</div>
+		    				<div class="col-md-9">
+								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>		
+		    				</div>
+	    				</a>
+	    			</div>
+
+	    			<div class="row">
+	    				<a href="#">
+		    				<div class="col-md-3">
+		    					<img src="images/a_mad_tea_party_thumbnail.jpg" class="img-rounded img-responsive" alt="Responsive image">
+		    				</div>
+		    				<div class="col-md-9">
+								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>		
+		    				</div>
+	    				</a>
+	    			</div>
+				</div>
+	    	</div>
+
+	    	<div class="col-md-4">
+	    		<div class="footer-widget">
+	    			<h2 class="title-yellow">Address</h2>
+					<address>
+					  <strong>Your Company</strong><br>
+					  795 Folsom Ave, Suite 600<br>
+					  San Francisco, CA 94107<br>
+					  <abbr title="Phone">P:</abbr> (123) 456-7890
+					</address>
+				</div>
+
+			    <div class="footer-widget social">
+			    	<h2 class="title-yellow">Stay with Us</h2>
+			    	<a href="#"><span class="fa fa-facebook fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-twitter fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-google-plus fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-pinterest fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-linkedin fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-instagram fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-tumblr fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-youtube fa-fw"></span></a>
+			    </div>
+	    	</div>
+    	</div>
+
+    	<div class="row footer-extra">
+    		<div class="col-md-12">
+    			<p class="text-center">&copy; <i>2014 Simple. All rights reserved. Theme by AmirMasoud.</i></p>
+    		</div>
+    	</div>
+    </footer>
+
+</div>
+</body>
+</html>

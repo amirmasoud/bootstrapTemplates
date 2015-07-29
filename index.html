@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- bootstrap stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!-- our style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+
+	<!-- jssor Slider -->
+	<script src="js/jssor.slider.mini.js"></script>
+	<script src="js/jssor.script.custom.js"></script>
+
+	<!-- bootstrap javascript -->
+	<script src="js/bootstrap.min.js"></script>	
+
+	<title>Simple | a simple user friendly theme</title>
+</head>
+
+<body>
+	<header class="header">
+		<!-- navbar -->
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+	      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">Brand</a>
+	        </div>
+
+	        <!-- Collect the nav links, forms, and other content for toggling -->
+	        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+	          <ul class="nav navbar-nav">
+	            <li><a href="#">Home</a></li>
+				<ul class="nav navbar-nav">
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="blog-2col-right.html">blog 2col right</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>            
+	            <li><a href="#">Pages</a></li>
+	          </ul>
+	        </div><!-- /.navbar-collapse -->
+	      </div>
+	    </nav>
+	</header>
+
+<script>
+$(document).ready(function(){
+
+    // hide #back-top first
+    $("#back-top").hide();
+    
+    // fade in #back-top
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#back-top').fadeIn();
+            } else {
+                $('#back-top').fadeOut();
+            }
+        });
+
+        // scroll body to 0px on click
+        $('#back-top a').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
+
+});
+</script>
+    <p id="back-top">
+        <a href="#top"><span></span><i class="fa fa-angle-up fa-2x"></i></a>
+    </p>
+    <div id="slider1_container" style="position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(images/slider/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+        </div>
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
+            height: 500px; overflow: hidden;">
+            <div>
+                <img u="image" src="images/slider/red.jpg" />
+                <div u="caption" t="NO" t3="RTT|2" r3="137.5%" du3="3000" d3="500" style="position: absolute; width: 445px; height: 300px; top: 100px; left: 600px;">
+                    <img src="images/slider/c-phone.png" style="position: absolute; width: 445px; height: 300px; top: 0px; left: 0px;" />
+                    <img u="caption" t="CLIP|LR" du="4000" t2="NO" src="images/slider/c-jssor-slider.png" style="position: absolute; width: 102px; height: 78px; top: 70px; left: 130px;" />
+                    <img u="caption" t="ZMF|10" t2="NO" src="images/slider/c-text.png" style="position: absolute; width: 80px; height: 53px; top: 153px; left: 163px;" />
+                    <img u="caption" t="RTT|10" t2="NO" src="images/slider/c-fruit.png" style="position: absolute; width: 140px; height: 90px; top: 60px; left: 220px;" />
+                    <img u="caption" t="T" du="4000" t2="NO" src="images/slider/c-navigator.png" style="position: absolute; width: 200px; height: 155px; top: 57px; left: 121px;" />
+                </div>
+                <div u="caption" t="RTT|2" r="-75%" du="1600" d="2500" t2="NO" style="position: absolute; width: 470px; height: 220px; top: 120px; left: 650px;">
+                    <img src="images/slider/c-phone-horizontal.png" style="position: absolute; width: 470px; height: 220px; top: 0px; left: 0px;" />
+                    <img u="caption" t3="MCLIP|L" du3="2000" src="images/slider/c-slide-1.jpg" style="position: absolute; width: 379px; height: 213px; top: 4px; left: 45px;" />
+                    <img u="caption" t="MCLIP|R" du="2000" t2="NO" src="images/slider/c-slide-3.jpg" style="position: absolute; width: 379px; height: 213px; top: 4px; left: 45px;" />
+                    <img u="caption" t="RTTL|BR" x="500%" y="500%" du="1000" d="-3000" r="-30%" t3="L" x3="70%" du3="1600" src="images/slider/c-finger-pointing.png" style="position: absolute; width: 257px; height: 300px; top: 80px; left: 200px;" />
+                    <img src="images/slider/c-navigator-horizontal.png" style="position: absolute; width: 379px; height: 213px; top: 4px; left: 45px;" />
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Touch Swipe Slider
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
+                </div>
+            </div>
+            <div>
+                <img u="image" src="images/slider/purple.jpg" />
+                <img src="images/slider/c-phone.png" style="position: absolute; width: 445px; height: 300px; top: 100px; left: 600px; background-color: transparent;" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Touch Swipe Slider
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
+                </div>
+            </div>
+            <div>
+                <img u="image" src="images/slider/blue.jpg" />
+                <img src="images/slider/c-phone.png" style="position: absolute; width: 445px; height: 300px; top: 100px; left: 600px; background-color: transparent;" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">Touch Swipe Slider
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        Build your slider with anything, includes image, content, text, html, photo, picture
+                </div>
+            </div>
+        </div>
+                
+        <!-- Navigator Skin Begin -->
+        <style>
+            /* jssor slider navigator skin 21 css */
+            /*
+            .jssorn21 div           (normal)
+            .jssorn21 div:hover     (normal mouseover)
+            .jssorn21 .av           (active)
+            .jssorn21 .av:hover     (active mouseover)
+            .jssorn21 .dn           (mousedown)
+            */
+            .jssorn21 div, .jssorn21 div:hover, .jssorn21 .av
+            {
+                background: url(images/slider/n21.png) no-repeat;
+                overflow:hidden;
+                cursor: pointer;
+            }
+            .jssorn21 div { background-position: -5px -5px; }
+            .jssorn21 div:hover, .jssorn21 .av:hover { background-position: -35px -5px; }
+            .jssorn21 .av { background-position: -65px -5px; }
+            .jssorn21 .dn, .jssorn21 .dn:hover { background-position: -95px -5px; }
+        </style>
+        <!-- navigator container -->
+        <div u="navigator" class="jssorn21" style="position: absolute; bottom: 26px; left: 6px;">
+            <!-- navigator item prototype -->
+            <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+        </div>
+        <!-- Navigator Skin End -->
+
+        <!-- Direction Navigator Skin Begin -->
+        <style>
+            /* jssor slider direction navigator skin 21 css */
+            /*
+            .jssord21l              (normal)
+            .jssord21r              (normal)
+            .jssord21l:hover        (normal mouseover)
+            .jssord21r:hover        (normal mouseover)
+            .jssord21ldn            (mousedown)
+            .jssord21rdn            (mousedown)
+            */
+            .jssord21l, .jssord21r, .jssord21ldn, .jssord21rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                background: url(images/slider/d21.png) center center no-repeat;
+                overflow: hidden;
+            }
+            .jssord21l { background-position: -3px -33px; }
+            .jssord21r { background-position: -63px -33px; }
+            .jssord21l:hover { background-position: -123px -33px; }
+            .jssord21r:hover { background-position: -183px -33px; }
+            .jssord21ldn { background-position: -243px -33px; }
+            .jssord21rdn { background-position: -303px -33px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssord21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssord21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+        </span>
+        <!-- Direction Navigator Skin End -->
+    </div>
+    <!-- Trigger -->
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+    			<h2>1 Box Layout</h2>
+    		</div>
+    	</div>
+	    <div class="row box-1">
+	    	<div class="col-md-12  block-blue">
+	    		<h2 class="text-center sky"><i class="fa fa-cloud fa-3x"></i></h2>
+	    		<h2 class="text-center blue">Just</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-blue btn-block">Heart Beat <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>	    		
+	    	</div>
+	    </div>
+
+    	<div class="row">
+    		<div class="col-md-12">
+    			<h2>2 Boxes Layout</h2>
+    		</div>
+    	</div>
+	    <div class="row box-2">
+	    	<div class="col-md-6  block-blue">
+	    		<h2 class="text-center sky"><i class="fa fa-cloud fa-3x"></i></h2>
+	    		<h2 class="text-center blue">Just</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-blue btn-block">Heart Beat <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>	    		
+	    	</div>
+
+	    	<div class="col-md-6 block-red">
+	    		<h2 class="text-center heart"><i class="fa fa-heart fa-3x"></i></h2>
+	    		<h2 class="text-center red">A Simple</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-red btn-block">Really Simple <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>
+	    	</div>
+	    </div>
+
+    	<div class="row">
+    		<div class="col-md-12">
+    			<h2>3 Boxes Layout</h2>
+    		</div>
+    	</div>
+	    <div class="row box-3">
+	    	<div class="col-md-4  block-blue">
+	    		<h2 class="text-center sky"><i class="fa fa-cloud fa-3x"></i></h2>
+	    		<h2 class="text-center blue">Just</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-blue btn-block">Heart Beat <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>	    		
+	    	</div>
+
+	    	<div class="col-md-4 block-red">
+	    		<h2 class="text-center heart"><i class="fa fa-heart fa-3x"></i></h2>
+	    		<h2 class="text-center red">A Simple</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-red btn-block">Really Simple <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>
+	    	</div>
+
+	    	<div class="col-md-4  block-yellow">
+	    		<h2 class="text-center umbrella"><i class="fa fa-umbrella fa-3x"></i></h2>
+	    		<h2 class="text-center yellow">Theme</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-yellow btn-block">Theming <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>	    		
+	    	</div>
+	    </div>
+
+
+	    <div class="row box-4">
+	    	<div class="row">
+	    		<div class="col-md-12">
+	    			<h2>4 Boxes Layout</h2>
+	    		</div>
+	    	</div>	    
+	    	<div class="col-md-3  block-blue">
+	    		<h2 class="text-center sky"><i class="fa fa-cloud fa-3x"></i></h2>
+	    		<h2 class="text-center blue">Just</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-blue btn-block">Heart Beat <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>	    		
+	    	</div>
+
+	    	<div class="col-md-3 block-red">
+	    		<h2 class="text-center heart"><i class="fa fa-heart fa-3x"></i></h2>
+	    		<h2 class="text-center red">A Simple</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-red btn-block">Really Simple <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>
+	    	</div>
+
+	    	<div class="col-md-3  block-yellow">
+	    		<h2 class="text-center umbrella"><i class="fa fa-umbrella fa-3x"></i></h2>
+	    		<h2 class="text-center yellow">Theme</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-yellow btn-block">Theming <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>	    		
+	    	</div>
+
+	    	<div class="col-md-3  block-green">
+	    		<h2 class="text-center truck"><i class="fa fa-truck fa-3x"></i></h2>
+	    		<h2 class="text-center green">Like This!</h2>
+	    		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+	    		<div class="row">
+		    		<div class="col-md-6 col-xs-12 pull-right"><button class="btn btn-green btn-block">Green Truck <i class="fa fa-chevron-right"></i></button></div>
+	    		</div>	    		
+	    	</div>	    	
+	    </div>	    
+    </div><!-- end container -->
+
+    <!-- footer -->
+    <footer class="footer">
+    	<div class="row footer-content center-block">
+	    	<div class="col-md-4">
+	    		<div class="footer-widget">
+	    			<h2 class="title-blue">Search</h2>
+				    <div class="input-group">
+				      <input type="text" class="form-control" placeholder="Search our site...">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+				      </span>
+				    </div>    		
+				</div>
+
+			    <div class="footer-widget">
+			    	<h2 class="title-blue">About Us</h2>
+			    	<p>Simple is Responsive, Bootstrap Based Theme Just For YOU :)</p>
+			    </div>
+	    	</div>
+
+	    	<div class="col-md-4">
+	    		<div class="footer-widget recent-posts-red">
+	    			<h2 class="title-red">Recent Posts</h2>
+	    			<div class="row">
+	    				<a href="#">
+		    				<div class="col-md-3">
+		    					<img src="images/a_mad_tea_party_thumbnail.jpg" class="img-rounded img-responsive" alt="Responsive image">
+		    				</div>
+		    				<div class="col-md-9">
+								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>		
+		    				</div>
+	    				</a>
+	    			</div>
+
+	    			<div class="row">
+	    				<a href="#">
+		    				<div class="col-md-3">
+		    					<img src="images/a_mad_tea_party_thumbnail.jpg" class="img-rounded img-responsive" alt="Responsive image">
+		    				</div>
+		    				<div class="col-md-9">
+								<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>		
+		    				</div>
+	    				</a>
+	    			</div>
+				</div>
+	    	</div>
+
+	    	<div class="col-md-4">
+	    		<div class="footer-widget">
+	    			<h2 class="title-yellow">Address</h2>
+					<address>
+					  <strong>Your Company</strong><br>
+					  795 Folsom Ave, Suite 600<br>
+					  San Francisco, CA 94107<br>
+					  <abbr title="Phone">P:</abbr> (123) 456-7890
+					</address>
+				</div>
+
+			    <div class="footer-widget social">
+			    	<h2 class="title-yellow">Stay with Us</h2>
+			    	<a href="#"><span class="fa fa-facebook fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-twitter fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-google-plus fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-pinterest fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-linkedin fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-instagram fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-tumblr fa-fw"></span></a>
+			    	<a href="#"><span class="fa fa-youtube fa-fw"></span></a>
+			    </div>
+	    	</div>
+    	</div>
+
+    	<div class="row footer-extra">
+    		<div class="col-md-12">
+    			<p class="text-center">&copy; <i>2014 Simple. All rights reserved. Theme by AmirMasoud.</i></p>
+    		</div>
+    	</div>
+    </footer>
+
+</div>
+</body>
+</html>
